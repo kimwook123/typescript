@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "tsc"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
@@ -11,5 +12,9 @@
   "description": "",
   "devDependencies": {
     "typescript": "^5.5.3"
-  }
+  },
+  "dependencies": {
+    "gh-pages": "^6.1.1"
+  },
+  "homepage": "https://kimwook123.github.io/Repository명/"
 }
